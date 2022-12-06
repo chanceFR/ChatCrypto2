@@ -27,4 +27,17 @@ public class Main {
             System.exit(-1);
         }
     }
+    try{
+    	echoSocket = new Socket(nom machine distante, numéro de port distant) ;
+    	out = new PrintWriter(echoSocket.getOutputStream(),true) ;
+    	in = new BufferedReader(newInputStreamReader(echoSocket.getInputStream())) ;
+    	}
+    	catch(UnknownHostException e){
+    	System.out.println(« Destination unknown ») ;
+    	System.exit(-1) ;
+    	}
+    	catch(IOException e){
+    	System.out.println(« now to investigate this IO issue ») ;
+    	System.exit(-1) ;
+    	}
 }
